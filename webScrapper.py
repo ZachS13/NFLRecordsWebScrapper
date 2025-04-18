@@ -21,7 +21,7 @@ class ArrestRecord:
 
 def fetch_arrest_records(base_url: str, max_pages: int = 5) -> List[ArrestRecord]:
     options = Options()
-    # options.add_argument("--headless")
+    options.add_argument("--headless")
     driver = webdriver.Chrome(options=options)
     records = []
 
